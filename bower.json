@@ -1,0 +1,31 @@
+{
+  "name": "cartiernavigation",
+  "description": "Cartier navigation component is the updated navigation menu designed as part of Cartier Redesign",
+  "main": "app.js",
+  "authors": [
+    "Cartier"
+  ],
+  "license": "UNLICENSED",
+  "keywords": [
+    "Cartier",
+    "Cartier",
+    "navigation",
+    "menu",
+    "nav",
+    "navigation",
+    "redesign"
+  ],
+  "homepage": "www.cartier.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7"
+  }
+}
