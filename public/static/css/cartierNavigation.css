@@ -1,0 +1,31 @@
+@media (min-width: 768px) {
+    .c-navigation__overlay {
+        text-align: center;
+    }
+}
+
+.c-navigation__container {
+    display: inline-block;
+}
+
+.c-navigation__header--toggle {
+    position: relative;
+    padding: 9px 10px;
+    float: left;
+    margin: 8px 0 8px 15px;
+    background-color: transparent;
+    background-image: none;
+    border: none;
+}
+
+.c-navigation__header--toggle .c-navigation__header--iconbar {
+    display: block;
+    width: 18px; /*Overrides default width 22px*/
+    height: 2px;
+    background-color: #2f2f2f;
+    border-radius: 1px;
+}
+
+.c-navigation__header--toggle .c-navigation__header--iconbar+.c-navigation__header--iconbar {
+    margin-top: 4px;
+}
