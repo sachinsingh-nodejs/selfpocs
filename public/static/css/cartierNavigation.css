@@ -1,11 +1,15 @@
-@media (min-width: 768px) {
-    .c-navigation__overlay {
-        text-align: center;
-    }
+.c-navigation__container .navbar-nav {
+    margin: 0;
 }
 
-.c-navigation__container {
-    display: inline-block;
+.c-navigation__container .nav > li > a {
+    color: #3f3f3f;
+}
+
+.c-navigation__container .nav > li > a:hover {
+    color: #000;
+    background-color: transparent;
+    background-image: none;
 }
 
 .c-navigation__header--toggle {
@@ -26,6 +30,22 @@
     border-radius: 1px;
 }
 
-.c-navigation__header--toggle .c-navigation__header--iconbar+.c-navigation__header--iconbar {
+.c-navigation__header--toggle .c-navigation__header--iconbar + .c-navigation__header--iconbar {
     margin-top: 4px;
+}
+
+@media (min-width: 768px) {
+    .c-navigation__overlay {
+        position: relative;
+        display: block;
+        background-color: transparent;
+        background-image: none;
+        text-align: center;
+    }
+
+    .c-navigation__container {
+        display: inline-block;
+        background-color: transparent;
+        background-image: none;
+    }
 }
