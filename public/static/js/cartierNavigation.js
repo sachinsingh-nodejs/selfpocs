@@ -1,10 +1,12 @@
 $(function () {
-    var navigation = $("#jsNavigationToggle"),
+    var body = $(document.body),
+        navigation = $("#jsNavigationToggle"),
         overlay = $(".js-navigation__overlay"),
         menu = $(".js-navigation__container");
-    // Implement window resize event to dynamically analyze when to switch event on and off
+    // Window "resize" event is a fallback for "orientationchange" event
+    // and works on all major mobile browsers
     $(window).on("resize", function () {
-        console.log("Window resized");
+        console.log("Orientation changed");
         if ($(this).width() < 768) {
             navigation.off("click").on("click", _toggleNavigation);
             overlay.off("click").on("click", _overlayClick);
@@ -32,6 +34,7 @@ $(function () {
     }
 
     function _overlayClick () {
+        body.addClass("modal-open");
         overlay.removeClass("color-transform");
         menu.removeClass("translated");
         setTimeout(function () {

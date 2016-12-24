@@ -67,9 +67,12 @@
 @media (min-width: 768px) {
     .c-navigation__overlay {
         position: static;
+        text-align: center;
+    }
+
+    .c-navigation__overlay, .c-navigation__overlay.color-transform {
         background-color: transparent;
         background-image: none;
-        text-align: center;
     }
 
     .c-navigation__container {
