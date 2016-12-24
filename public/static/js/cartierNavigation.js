@@ -30,7 +30,7 @@ $(function () {
         setTimeout(function () {
             overlay.addClass("color-transform");
             menu.addClass("translated");
-        }, 10);
+        }, 30);
     }
 
     function _overlayClick () {
@@ -39,7 +39,7 @@ $(function () {
         menu.removeClass("translated");
         setTimeout(function () {
             overlay.addClass("hidden-xs");
-        }, 500); // Since transition runs for 500 ms
+        }, 400); // Since transition runs for 400 ms
     }
 
     function _stopEvtPropagation (e) {
