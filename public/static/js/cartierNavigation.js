@@ -7,7 +7,7 @@ $(function () {
             setTimeout(function () {
                 overlay.addClass("color-transform");
                 menu.addClass("translated");
-            }, 50);
+            }, 1);
         });
         overlay.on("click", function () {
             overlay.removeClass("color-transform");
