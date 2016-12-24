@@ -1,3 +1,9 @@
+.c-navigation {
+    font-family: "ProximaNovaSemibold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
 .c-navigation__overlay {
     display: block;
     position: fixed;
@@ -85,5 +91,13 @@
         transform: none;
         overflow-x: hidden;
         overflow-y: hidden;
+    }
+
+    .c-navigation__container .nav > li > a {
+        padding: 10px 0;
+    }
+
+    .c-navigation__container .nav > li + li {
+        margin-left: 40px;
     }
 }
