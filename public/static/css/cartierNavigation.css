@@ -1,6 +1,5 @@
 .c-navigation {
     font-family: "ProximaNovaSemibold","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 12px;
     text-transform: uppercase;
 }
 
@@ -40,7 +39,7 @@
 }
 
 .c-navigation__container .nav > li > a {
-    color: #3f3f3f;
+    color: #000;
 }
 
 .c-navigation__container .nav > li > a:hover,
@@ -73,6 +72,10 @@
 }
 
 @media (min-width: 768px) {
+    .c-navigation {
+        font-size: 12px;
+    }
+
     .c-navigation__overlay {
         position: static;
         text-align: center;
